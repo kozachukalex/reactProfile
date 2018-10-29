@@ -9,3 +9,7 @@ a{
 .navbar-nav{
     margin: 0 auto;
 }
+
+.icon{
+    height: 50px;
+}
