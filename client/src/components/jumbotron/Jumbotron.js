@@ -8,8 +8,7 @@ import "./index.css";
 export default class Jumbo extends React.Component {
     render() {
         return (
-            <div>
-                <Jumbotron>
+                <Jumbotron className="infoArea">
                         <h1 className="display-3">Alex Kozachuk</h1>
                         <h1 className="display-5">Full Stack Developer</h1>
                         <br />
@@ -18,8 +17,6 @@ export default class Jumbo extends React.Component {
                         <hr className="my-2" />
                         <p className="lead">Utilizing a fundamental understanding of databases and routes to bring an application to life.</p>
                 </Jumbotron>
-
-            </div>
         )
     }
 

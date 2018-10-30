@@ -22,7 +22,7 @@ export default class Home extends React.Component {
     render() {
         return (
         <Fade in={this.state.fadeIn} tag="div">
-            <Jumbotron />
+            <Jumbotron  className="infoArea"/>
         </Fade>
         )
     }

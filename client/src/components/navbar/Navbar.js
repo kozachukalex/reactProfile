@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Collapse,
+  DropdownItem,
   Navbar,
   NavbarToggler,
   NavbarBrand,
@@ -47,43 +48,75 @@ export default class navbar extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+
   render(props) {
     return (
       <div>
         <StyledNavbar
           expand="md"
         >
-          <NavbarBrand
-            onClick={() => this.props.handlePageChange("Home")}
-            className={this.currentPage === "Home" ? "active" : "nav-link"}>
-            <img className="logo" src="../images/logoImage.png" alt="logo"></img>
-          </NavbarBrand>
+          <div className="pushLogo">
+            <NavbarBrand
+              onClick={() => { this.props.handlePageChange("Home") }}
+              // onClick={() => {    this.setState({
+              //   isOpen: false
+              // })}} No duplicate props allowed. Can I make one line, or should I create
+              className={this.currentPage === "Home" ? "active" : "nav-link"}>
+              <img className="logo" src="../images/logoImage.png" alt="logo"></img>
+            </NavbarBrand>
+          </div>
           <NavbarToggler onClick={this.toggle}>
             <StyledMdIconPackMdMenu size={40} />
           </NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+            <DropdownItem divider />
+              <StyledNavItem
+                onClick={() => this.props.handlePageChange("Home")}
+                className={this.props.currentPage === "Home" ? "active" : "deactive"}>
+                <NavLink
+                  onClick={() => {
+                    this.setState({
+                      isOpen: false
+                    })
+                  }}>Home</NavLink>
+              </StyledNavItem>
               <StyledNavItem
                 onClick={() => this.props.handlePageChange("About")}
                 className={this.props.currentPage === "About" ? "active" : "deactive"}>
-                <NavLink>About</NavLink>
+                <NavLink
+                  onClick={() => {
+                    this.setState({
+                      isOpen: false
+                    })
+                  }}>About</NavLink>
               </StyledNavItem>
               <StyledNavItem
                 onClick={() => this.props.handlePageChange("Portfolio")}
-                className={this.props.currentPage === "Portfolio" ? "active" : "deactive"}>
-                <NavLink>Portfolio</NavLink>
+                className={this.props.currentPage === "Portfolio" ? "active" : "active"}>
+                <NavLink
+                  onClick={() => {
+                    this.setState({
+                      isOpen: false
+                    })
+                  }}>Portfolio</NavLink>
               </StyledNavItem>
               <StyledNavItem
                 onClick={() => this.props.handlePageChange("Contact")}
                 className={this.props.currentPage === "Contact" ? "active" : "deactive"}>
-                <NavLink>Contact</NavLink>
+                <NavLink
+                  onClick={() => {
+                    this.setState({
+                      isOpen: false
+                    })
+                  }}>Contact</NavLink>
               </StyledNavItem>
             </Nav>
-              <NavLink 
+            <NavLink
               className="deactive"
               href="https://github.com/kozachukalex">Github</NavLink>
-              <NavLink 
-              className="pushIt deactive" 
+            <NavLink
+              className="pushIt deactive"
               href="/">LinkedIn</NavLink>
           </Collapse>
         </StyledNavbar>

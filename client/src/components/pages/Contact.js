@@ -1,9 +1,8 @@
 import React from "react";
 import {Fade} from 'reactstrap'
-import Jumbotron from "../jumbotron"
+import ContactForm from "../contactForm"
 
-export default class Home extends React.Component {
-
+export default class Contact extends React.Component {
     constructor(props) {
         super(props);
         this.state = { fadeIn: true };
@@ -18,11 +17,10 @@ export default class Home extends React.Component {
     componentDidMount() {
         this.toggle();
     }
-
     render() {
         return (
         <Fade in={this.state.fadeIn} tag="div">
-            <Jumbotron />
+            <ContactForm />
         </Fade>
         )
     }

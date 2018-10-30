@@ -1,23 +1,16 @@
 import React from "react";
-import { } from 'reactstrap';
+// import { Jumbotron } from 'reactstrap';
 // import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
 
 
-export default class ContactForm extends React.Component {
-
-    state = {
-        name: '',
-        email: '',
-        message: ''
-    }
-
+export default class Portfolio extends React.Component {
     render() {
         return (
             <div className="infoArea">
-                <h1> Contact Form</h1>
+                <h1> Portfolio Test</h1>
             </div>
         )
     }
-}
+};

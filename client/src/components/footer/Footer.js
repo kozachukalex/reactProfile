@@ -8,11 +8,11 @@ export default class footer extends React.Component {
   render() {
     return (
       <div className="footer">
-        <div className="row">
-          <div className="col-lg-6">
+        <div className="row container">
+          <div className="col-sm-6 leftSection">
             <p> test one </p>
           </div>
-          <div className="col-lg-6">
+          <div className="col-sm-6 rightSection">
             <p> test two </p>
           </div>
         </div>

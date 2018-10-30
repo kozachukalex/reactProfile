@@ -1,8 +1,8 @@
 import React from "react";
 import {Fade} from 'reactstrap'
-import Jumbotron from "../jumbotron"
+import Bio from "../bio"
 
-export default class Home extends React.Component {
+export default class About extends React.Component {
 
     constructor(props) {
         super(props);
@@ -22,7 +22,7 @@ export default class Home extends React.Component {
     render() {
         return (
         <Fade in={this.state.fadeIn} tag="div">
-            <Jumbotron />
+            <Bio />
         </Fade>
         )
     }

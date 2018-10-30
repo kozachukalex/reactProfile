@@ -1,6 +1,6 @@
 import React from "react";
 import {Fade} from 'reactstrap'
-import Jumbotron from "../jumbotron"
+import Portfolio from "../portfolio"
 
 export default class Home extends React.Component {
 
@@ -22,7 +22,7 @@ export default class Home extends React.Component {
     render() {
         return (
         <Fade in={this.state.fadeIn} tag="div">
-            <Jumbotron />
+            <Portfolio />
         </Fade>
         )
     }

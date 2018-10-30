@@ -1,5 +1,24 @@
 .footer{
-    height: 20vh;
+    min-height: 20vh;
     width: 100%;
     background: black;
+}
+
+.container{
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.leftSection{
+    text-align: left;
+}
+
+.rightSection{
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .rightSection{
+        text-align: left;
+    }
 }
