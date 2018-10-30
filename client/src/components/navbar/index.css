@@ -4,6 +4,7 @@
 
 a{
     color:white !important;
+    cursor: pointer;
 }
 
 .navbar-nav{
@@ -12,4 +13,18 @@ a{
 
 .icon{
     height: 50px;
+}
+
+.active{
+    color:blue !important;
+}
+.deactive:hover{
+    transform: scale(2.0) !important;
+}
+
+@media only screen and (min-width: 600px) {
+    .pushIt {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
 }

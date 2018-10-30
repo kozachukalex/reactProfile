@@ -34,12 +34,12 @@ const StyledMdIconPackMdMenu = styled(MdIconPack.MdMenu)`
 
 
 export default class navbar extends React.Component {
+
   constructor(props) {
     super(props);
-
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
     };
   }
   toggle() {
@@ -47,28 +47,44 @@ export default class navbar extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
-  render() {
+  render(props) {
     return (
       <div>
-        <StyledNavbar expand="md">
-          <NavbarBrand href="/"><img className="logo" src="../images/logoImage.png" alt="logo"></img></NavbarBrand>
+        <StyledNavbar
+          expand="md"
+        >
+          <NavbarBrand
+            onClick={() => this.props.handlePageChange("Home")}
+            className={this.currentPage === "Home" ? "active" : "nav-link"}>
+            <img className="logo" src="../images/logoImage.png" alt="logo"></img>
+          </NavbarBrand>
           <NavbarToggler onClick={this.toggle}>
-          <StyledMdIconPackMdMenu size={40} />
+            <StyledMdIconPackMdMenu size={40} />
           </NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <StyledNavItem>
-                <NavLink href="/about">About</NavLink>
+              <StyledNavItem
+                onClick={() => this.props.handlePageChange("About")}
+                className={this.props.currentPage === "About" ? "active" : "deactive"}>
+                <NavLink>About</NavLink>
               </StyledNavItem>
-              <StyledNavItem>
-                <NavLink href="/portfolio">Portfolio</NavLink>
+              <StyledNavItem
+                onClick={() => this.props.handlePageChange("Portfolio")}
+                className={this.props.currentPage === "Portfolio" ? "active" : "deactive"}>
+                <NavLink>Portfolio</NavLink>
               </StyledNavItem>
-              <StyledNavItem>
-                <NavLink href="/contact">Contact</NavLink>
+              <StyledNavItem
+                onClick={() => this.props.handlePageChange("Contact")}
+                className={this.props.currentPage === "Contact" ? "active" : "deactive"}>
+                <NavLink>Contact</NavLink>
               </StyledNavItem>
             </Nav>
-            <NavLink href="https://github.com/kozachukalex">Github</NavLink>
-            <NavLink href="/">LinkedIn</NavLink>
+              <NavLink 
+              className="deactive"
+              href="https://github.com/kozachukalex">Github</NavLink>
+              <NavLink 
+              className="pushIt deactive" 
+              href="/">LinkedIn</NavLink>
           </Collapse>
         </StyledNavbar>
       </div>
