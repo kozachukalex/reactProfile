@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
@@ -9,37 +10,27 @@ import Contact from "./components/pages/Contact";
 
 class App extends Component {
   state = {
-    currentPage: "Home"
+    currentPage: ""
   };
 
   handlePageChange = page => {
     this.setState({ currentPage: page });
   };
 
-  renderPage = () => {
-    if (this.state.currentPage === "Home") {
-      return <Home />;
-    }
-    else if (this.state.currentPage === "About") {
-      return <About />;
-    } else if (this.state.currentPage === "Portfolio") {
-      return <Portfolio />;
-    } else if (this.state.currentPage === "Contact") {
-      return <Contact />;
-    }
-  };
-
   render() {
     return (
-      <div className="App">
-        <div className="mainBackground">
-          <Navbar handlePageChange={this.handlePageChange} />
-          <div className="pageContainer">
-            {this.renderPage()}
-          </div>
-          <Footer></Footer>
+      <Router>
+        <div className="App mainBackground">
+            <Navbar  handlePageChange = {this.handlePageChange} currentPage={this.state.currentPage}/>
+            <div className="pageContainer">
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/about" component={About} />
+                <Route exact path="/portfolio" component={Portfolio} />
+                <Route exact path="/contact" component={Contact} />
+            </div>
+            <Footer></Footer>
         </div>
-      </div>
+        </Router>
     );
   }
 }

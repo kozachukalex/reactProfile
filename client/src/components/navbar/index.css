@@ -23,7 +23,7 @@ a{
     transition: all 200ms ease;
 }
 .deactive:hover{
-    transform: scale(2.0) !important;
+    transform: scale(1.5) !important;
 }
 
 .hr-3{
