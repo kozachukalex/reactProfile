@@ -1,10 +1,17 @@
+.navFixed{
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(to top left, black, #444444);
+    z-index: 100;
+}
 .logo {
-    height: 64px;
+    height: 56px;
 }
 
 a{
-    color:white !important;
+    color:#fff !important;
     cursor: pointer;
+    font-weight: bolder;
 }
 
 .navbar-nav{
@@ -27,7 +34,7 @@ a{
 }
 
 .hr-3{
-    color: white;
+    color: #04abcc;
 }
 
 @media only screen and (min-width: 600px) {

@@ -1,6 +1,7 @@
 import React from "react";
-import {Fade} from 'reactstrap'
-import ContactForm from "../contactForm"
+import { Fade } from 'reactstrap'
+import contactCard from "../../images/contactCard.png"
+import "./contact.css"
 
 export default class Contact extends React.Component {
     constructor(props) {
@@ -19,9 +20,11 @@ export default class Contact extends React.Component {
     }
     render() {
         return (
-        <Fade in={this.state.fadeIn} tag="div">
-            <ContactForm />
-        </Fade>
+            <Fade in={this.state.fadeIn} tag="div">
+                <div className="contactBox container">
+                contact me
+                </div>
+            </Fade>
         )
     }
 

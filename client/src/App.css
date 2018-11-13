@@ -6,18 +6,20 @@
   position: relative;
   min-height: 100vh;
   width: 100%;
-  background-image: url("images/splash.jpg");
+  background-image: url("images/randomBackground.jpg");
+  background-size: cover;
   background-attachment: fixed;
 }
 
 .pageContainer{
   margin: 0;
+  padding-top:80px;
 }
 
 
 .infoArea{
-  margin: 0;
-  background-color: rgba(16, 16, 17, 0.6) !important;
-  height: 85vh;
+  height: 90vh;
   width: 100%;
+  display: flex;
+  flex-flow: column;
 }

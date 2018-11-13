@@ -13,13 +13,10 @@ import MdIconPack from 'react-icons/md'
 import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
+import logo from "../../images/akLogo.png"
 
 //example of styled-component for future uses
-const StyledNavbar = styled(Navbar)`
-    &&&&&&{
-        background-color: rgb(5, 172, 158) !important;
-    }
-`
+
 const StyledNavItem = styled(NavItem)`
     &&&&&&{
         margin-right: 30px;
@@ -30,7 +27,7 @@ const StyledNavItem = styled(NavItem)`
 
 const StyledMdIconPackMdMenu = styled(MdIconPack.MdMenu)`
     &&&&& {
-      color: white;
+      color: #fff;
       size: 48;
     }
 `
@@ -55,12 +52,13 @@ export default class navbar extends React.Component {
 
     return (
       <div>
-        <StyledNavbar
+        <Navbar
+          className="navFixed shadow p-3 mb-5"
           expand="md"
         >
           <div className="pushLogo">
             <Link to="/">
-              <img className="logo" src="../images/logoImage.png" alt="logo"></img>
+              <img className="logo" src={logo} alt="logo" onClick={() => this.props.handlePageChange("default")}></img>
             </Link>
           </div>
           <NavbarToggler onClick={this.toggle}>
@@ -112,9 +110,9 @@ export default class navbar extends React.Component {
               href="https://github.com/kozachukalex">Github</NavLink>
             <NavLink
               className="pushIt deactive"
-              href="/">LinkedIn</NavLink>
+              href="https://www.linkedin.com/in/alex-kozachuk-606b1915b/">LinkedIn</NavLink>
           </Collapse>
-        </StyledNavbar>
+        </Navbar>
       </div>
     );
   }
