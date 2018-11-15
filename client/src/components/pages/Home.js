@@ -19,16 +19,13 @@ export default class Home extends React.Component {
 
     componentDidMount() {
         this.toggle();
+        window.scrollTo(0, 0)
     }
-    
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
 
     render() {
         return (
             <Fade in={this.state.fadeIn} tag="div">
-                <div className="infoArea">
+                <div className="infoArea2">
                     <WordScramble />
                     <Jumbotron handlePageChange={this.props.handlePageChange} />
                     <Button id="reloadButton" href="/"> Replay Animation </Button>

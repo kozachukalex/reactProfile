@@ -27,3 +27,11 @@
   flex-flow: column;
   color: #fff;
 }
+.infoArea2{
+  position: relative;
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+}

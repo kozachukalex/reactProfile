@@ -25,7 +25,7 @@ export default class footer extends React.Component {
               <Link  to="/contact" onClick={() => this.props.handlePageChange("Contact")}> Reach Me </Link>
               <a href="https://github.com/kozachukalex"> My Github </a>
               <a href="https://www.linkedin.com/in/alex-kozachuk-606b1915b/"> LinkedIn </a>
-              <a> Site Repo </a>
+              <a href="https://github.com/kozachukalex/reactProfile.git"> Site Repo </a>
             </div>
           </div>
         </div>

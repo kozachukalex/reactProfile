@@ -20,11 +20,8 @@ export default class About extends React.Component {
 
     componentDidMount() {
         this.toggle();
+        window.scrollTo(0, 0)
     }
-    
-  componentDidMount() {
-    window.scrollTo(0, 0)
-  }
 
     render() {
         return (

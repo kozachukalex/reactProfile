@@ -1,4 +1,15 @@
-.contactBox{
-    min-height: 90vh;
-    margin-top: 10vh;
+#contactInformation{
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+    padding: 20px;
+    height: 40vh;
+}
+
+#contactHeader{
+    border-bottom: 1px solid cyan;
+    width: 80%;
+    margin: 0 auto;
+}
+.contactLinks{
+    font-size: 20px;
 }
