@@ -65,7 +65,7 @@ export default class navbar extends React.Component {
             <StyledMdIconPackMdMenu size={40} />
           </NavbarToggler>
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
+            <Nav className="ml-auto navFlexAdjust" navbar>
               <DropdownItem divider />
               <StyledNavItem
                 onClick={() => this.props.handlePageChange("About")}
@@ -105,12 +105,12 @@ export default class navbar extends React.Component {
                   </Link>
               </StyledNavItem>
             </Nav>
-            <NavLink
-              className="deactive"
-              href="https://github.com/kozachukalex">Github</NavLink>
-            <NavLink
-              className="pushIt deactive"
-              href="https://www.linkedin.com/in/alex-kozachuk-606b1915b/">LinkedIn</NavLink>
+              <NavLink
+                className="deactive"
+                href="https://github.com/kozachukalex">Github</NavLink>
+              <NavLink
+                className="deactive"
+                href="https://www.linkedin.com/in/alex-kozachuk-606b1915b/">LinkedIn</NavLink>
           </Collapse>
         </Navbar>
       </div>

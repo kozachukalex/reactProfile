@@ -30,7 +30,7 @@ li{
     margin-left: 20px;
     font-size: 30px;
 }
-h1.techHeader{
+h1.bioHeader{
     color: #fff;
     padding-bottom: 10px;
     margin: 20px auto 30px;
@@ -106,7 +106,7 @@ div.hexagon{
 
 }
 @media screen and (max-width: 930px){
-    h1.bioHeader{
+    h1.techHeader{
         color: #fff;
         padding-bottom: 10px;
         margin: 20px auto 30px;

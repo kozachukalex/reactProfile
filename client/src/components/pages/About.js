@@ -1,6 +1,8 @@
 import React from "react";
 import { Fade } from 'reactstrap'
 import Bio from "../bio"
+import TechLanguages from "../techAndLang";
+
 
 export default class About extends React.Component {
 
@@ -23,6 +25,7 @@ export default class About extends React.Component {
         return (
             <Fade in={this.state.fadeIn} tag="div">
                 <Bio />
+                <TechLanguages />
             </Fade>
         )
     }

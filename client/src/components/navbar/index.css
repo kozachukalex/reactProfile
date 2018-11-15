@@ -4,8 +4,13 @@
     background-image: linear-gradient(to top left, black, #444444);
     z-index: 100;
 }
+
+.navFlexAdjust{
+    display: flex;
+    justify-content: space-around;
+}
 .logo {
-    height: 56px;
+    height: 48px;
 }
 
 a{
@@ -37,13 +42,8 @@ a{
     color: #04abcc;
 }
 
-@media only screen and (min-width: 600px) {
-    .pushIt {
-        margin-left: 30px;
-        margin-right: 20px;
-    }
-    .pushLogo{
-        margin-left:15px;
-        margin-right:80px;
+@media screen and (max-width: 768px){
+    .nav-item{
+        text-align: center;
     }
 }
