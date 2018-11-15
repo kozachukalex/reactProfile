@@ -1,6 +1,4 @@
 #reloadButton{
-    position: absolute;
     width: 200px;
-    bottom: 2%;
-    left: 2%;
+    margin-bottom: 20px;
 }
