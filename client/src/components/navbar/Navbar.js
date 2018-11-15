@@ -17,14 +17,6 @@ import logo from "../../images/akLogo.png"
 
 //example of styled-component for future uses
 
-const StyledNavItem = styled(NavItem)`
-    &&&&&&{
-        margin-right: 30px;
-        margin-left: 30px;
-        padding: 8px 16px;
-    }
-`
-
 const StyledMdIconPackMdMenu = styled(MdIconPack.MdMenu)`
     &&&&& {
       color: #fff;
@@ -57,7 +49,11 @@ export default class navbar extends React.Component {
           expand="md"
         >
           <div className="pushLogo">
-            <Link to="/">
+            <Link to="/"                  onClick={() => {
+                    this.setState({
+                      isOpen: false
+                    })
+                  }}>
               <img className="logo" src={logo} alt="logo" onClick={() => this.props.handlePageChange("default")}></img>
             </Link>
           </div>
@@ -67,7 +63,7 @@ export default class navbar extends React.Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto navFlexAdjust" navbar>
               <DropdownItem divider />
-              <StyledNavItem
+              <NavItem
                 onClick={() => this.props.handlePageChange("About")}
                 className={this.props.currentPage === "About" ? "active" : "deactive"}>
                 <Link to="/about"
@@ -76,10 +72,10 @@ export default class navbar extends React.Component {
                       isOpen: false
                     })
                   }}>
-                  About
+                  Who I Am
                   </Link>
-              </StyledNavItem>
-              <StyledNavItem
+              </NavItem>
+              <NavItem
                 onClick={() => this.props.handlePageChange("Portfolio")}
                 className={this.props.currentPage === "Portfolio" ? "active" : "deactive"}>
                 <Link
@@ -89,10 +85,10 @@ export default class navbar extends React.Component {
                       isOpen: false
                     })
                   }}>
-                  Portfolio
+                  My Work
                 </Link>
-              </StyledNavItem>
-              <StyledNavItem
+              </NavItem>
+              <NavItem
                 onClick={() => this.props.handlePageChange("Contact")}
                 className={this.props.currentPage === "Contact" ? "active" : "deactive"}>
                 <Link to="/contact"
@@ -101,9 +97,9 @@ export default class navbar extends React.Component {
                       isOpen: false
                     })
                   }}>
-                  Contact
+                  Reach Me
                   </Link>
-              </StyledNavItem>
+              </NavItem>
             </Nav>
               <NavLink
                 className="deactive"

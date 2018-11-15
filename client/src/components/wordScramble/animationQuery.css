@@ -1,0 +1,211 @@
+/* final phrase anims */
+@media screen and (max-width: 760px){
+    #wordScramble{
+        position: relative;
+        top: 50px;
+        font-size: 18px;
+        width: 80vw;
+    }
+    
+#my{
+    animation-name: my;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes my{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 32%;
+        top: -160%;
+        font-size: 48px;
+    }
+}
+#n{
+    animation-name: n;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes n{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 23%;
+        top: -160%;
+        font-size: 48px;
+    }
+
+}
+#firstA{
+    animation-name: firstA;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes firstA{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: -28%;
+        top: -160%;
+        font-size: 48px;
+    }
+}
+#me{
+    animation-name: me;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes me{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: -66%;
+        top: -160%;
+        font-size: 48px;
+    }
+
+}
+#i{
+    animation-name: i;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes i{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 148%;
+        top: -160%;
+        font-size: 48px;
+    }
+
+}
+#s{
+    animation-name: s;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes s{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 30%;
+        top: -160%;
+        font-size: 48px;
+    }
+
+}
+#secondA{
+    animation-name: secondA;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes secondA{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 20%;
+        top: -160%;
+        font-size: 48px;
+    }
+
+}
+#L{
+    animation-name: L;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes L{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 15%;
+        top: -160%;
+        font-size: 48px;
+    }
+
+}
+#ex{
+    animation-name: ex;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes ex{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 0%;
+        top: -160%;
+        font-size: 48px;
+    }
+
+}
+
+}
+
+@media screen and (max-width: 460px){
+    #wordScramble{
+        position: relative;
+        top: 90px;
+        font-size: 18px;
+    }
+}

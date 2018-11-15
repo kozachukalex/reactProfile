@@ -1,0 +1,750 @@
+#wordScramble{
+    position: relative;
+    top: 125px;
+    width: 600px;
+    font-size: 36px;
+    margin: 0 auto;
+    color: rgba(80, 79, 79, 0.931);
+}
+
+.colorChange{
+    color: cyan;
+    animation-duration: 8s;
+    animation-name: colorChanging;
+}
+
+@keyframes colorChanging{
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: #fff;
+    }
+    70%{
+        color: cyan;
+    }
+}
+
+#css{
+    animation-duration: 8s;
+    animation-name: css;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes css{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        bottom: -200px;
+        left: -300px;
+    }
+    50%{
+        position: relative;
+        opacity: 1.0;
+        bottom: 0;
+        left: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#recur{
+    animation-duration: 8s;
+    animation-name: recur;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes recur{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        top: -180px;
+    }
+    40%{
+        position: relative;
+        opacity: 1.0;
+        top: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#brows{
+    animation-duration: 8s;
+    animation-name: brows;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes brows{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        right: -400px;
+    }
+    20%{
+        position: relative;
+        opacity: 1.0;
+        right: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#javs{
+    animation-duration: 8s;
+    animation-name: javs;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes javs{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        top: -230px;
+        left: -190px;
+    }
+    54%{
+        position: relative;
+        opacity: 1.0;
+        top: 0;
+        left: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#sql{
+    animation-duration: 8s;
+    animation-name: sql;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes sql{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        top: -280px;
+    }
+    40%{
+        position: relative;
+        opacity: 1.0;
+        top: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#compon{
+    animation-duration: 8s;
+    animation-name: compon;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes compon{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        left: -500px;
+    }
+    55%{
+        position: relative;
+        opacity: 1.0;
+        left: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#fntcn{
+    animation-duration: 8s;
+    animation-name: fntcn;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes fntcn{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        right: -450px;
+        bottom: -250px;
+    }
+    35%{
+        position: relative;
+        opacity: 1.0;
+        right: 0;
+        bottom: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#rct{
+    animation-duration: 8s;
+    animation-name: rct;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes rct{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        left: -410px;
+        bottom: -100px;
+    }
+    50%{
+        position: relative;
+        opacity: 1.0;
+        left: 0;
+        bottom: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#mern{
+    animation-duration: 8s;
+    animation-name: mern;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes mern{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        right: -150px;
+        bottom: -100px;
+    }
+    58%{
+        position: relative;
+        opacity: 1.0;
+        right: 0;
+        bottom: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#mobile{
+    animation-duration: 8s;
+    animation-name: mobile;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes mobile{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        bottom: -150px;
+        left: -230px;
+    }
+    48%{
+        position: relative;
+        opacity: 1.0;
+        bottom: 0;
+        left: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#responsive{
+    animation-duration: 8s;
+    animation-name: responsive;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes responsive{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        top: -150px;
+        right: -300px;
+    }
+    40%{
+        position: relative;
+        opacity: 1.0;
+        top: 0;
+        right: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#node{
+    animation-duration: 8s;
+    animation-name: node;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes node{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        right: -100px;
+    }
+    53%{
+        position: relative;
+        opacity: 1.0;
+        right: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#vari{
+    animation-duration: 8s;
+    animation-name: vari;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes vari{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        right: -400px;
+    }
+    50%{
+        position: relative;
+        opacity: 1.0;
+        right: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#xpress{
+    margin-left: 10px;
+    animation-duration: 8s;
+    animation-name: xpress;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes xpress{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        left: -400px;
+    }
+    54%{
+        position: relative;
+        opacity: 1.0;
+        left: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#mongo{
+    animation-duration: 8s;
+    animation-name: mongo;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes mongo{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        top: -260px;
+        right: -340px;
+    }
+    46%{
+        position: relative;
+        opacity: 1.0;
+        top: 0;
+        right: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#html{
+    animation-duration: 8s;
+    animation-name: html;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes html{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        bottom: -150px;
+    }
+    56%{
+        position: relative;
+        opacity: 1.0;
+        bottom: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+#cnstnt{
+    animation-duration: 8s;
+    animation-name: cnstnt;
+    color: rgba(80, 79, 79, 0); 
+}
+
+@keyframes cnstnt{
+    0%{ 
+        position: relative;
+        opacity: 0;
+        color: #fff;
+        top: -260px;
+        left: -340px;
+    }
+    40%{
+        position: relative;
+        opacity: 1.0;
+        top: 0;
+        left: 0;
+    }
+    70%{
+        position: relative;
+        color: #fff;
+    }
+    85%{
+        color: rgba(80, 79, 79, 0.931);  
+    }
+    100%{
+        position: relative;
+        color: rgba(80, 79, 79, 0);    
+    }
+}
+
+/* final phrase anims */
+#my{
+    animation-name: my;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes my{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 155%;
+        top: -160%;
+        font-size: 72px;
+    }
+}
+#n{
+    animation-name: n;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes n{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 112%;
+        top: -160%;
+        font-size: 72px;
+    }
+
+}
+#firstA{
+    animation-name: firstA;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes firstA{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 125%;
+        top: -160%;
+        font-size: 72px;
+    }
+}
+#me{
+    animation-name: me;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes me{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 60%;
+        top: -160%;
+        font-size: 72px;
+    }
+
+}
+#i{
+    animation-name: i;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes i{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 286%;
+        top: -160%;
+        font-size: 72px;
+    }
+
+}
+#s{
+    animation-name: s;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes s{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 120%;
+        top: -160%;
+        font-size: 72px;
+    }
+
+}
+#secondA{
+    animation-name: secondA;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes secondA{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 133%;
+        top: -160%;
+        font-size: 72px;
+    }
+
+}
+#L{
+    animation-name: L;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes L{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 123%;
+        top: -160%;
+        font-size: 72px;
+    }
+
+}
+#ex{
+    animation-name: ex;
+    animation-duration: 2s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes ex{
+    0%{
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    100%{ 
+        position: relative;
+        left: 120%;
+        top: -160%;
+        font-size: 72px;
+    }
+
+}

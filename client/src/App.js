@@ -23,7 +23,7 @@ class App extends Component {
         <div className="App mainBackground">
             <Navbar  handlePageChange = {this.handlePageChange} currentPage={this.state.currentPage}/>
             <div className="pageContainer">
-                <Route exact path="/" component={Home}/>
+                <Route exact path="/" component={Home} handlePageChange = {this.handlePageChange} currentPage={this.state.currentPage}/>
                 <Route exact path="/about" component={About} />
                 <Route exact path="/portfolio" component={Portfolio} />
                 <Route exact path="/contact" component={Contact} />

@@ -5,8 +5,10 @@
 .mainBackground{
   position: relative;
   min-height: 100vh;
-  width: 100%;
-  background-image: url("images/randomBackground.jpg");
+  max-width: 100vw;
+  background-image: url("images/workingAtNight.jpg");
+
+  background-repeat: none;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -19,8 +21,9 @@
 
 .infoArea{
   position: relative;
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   display: flex;
   flex-flow: column;
+  color: #fff;
 }

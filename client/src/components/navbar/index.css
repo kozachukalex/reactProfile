@@ -8,9 +8,15 @@
 .navFlexAdjust{
     display: flex;
     justify-content: space-around;
+    padding-left: 4%;
 }
 .logo {
     height: 48px;
+}
+.nav-item{
+    padding: 8px 16px;
+    min-width: 150px;
+    text-align: center;
 }
 
 a{
@@ -45,5 +51,10 @@ a{
 @media screen and (max-width: 768px){
     .nav-item{
         text-align: center;
+        margin: 0 auto;
+    }
+    .navFlexAdjust{
+        width: 100%;
+        padding-left: 0;
     }
 }

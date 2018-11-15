@@ -12,7 +12,7 @@ import reactIcon from "../../images/reactAltered.png";
 
 export default () => (
     <div className="techArea">
-        <h1 className="techHeader"> Technologies and Languages </h1>
+        <h1 id="techHeader"> Technologies and Languages </h1>
         <div className="flexAdjust">
             <div className="techText">
                 <p id="listHeader"> Experience with multiple front-end frameworks including:</p>

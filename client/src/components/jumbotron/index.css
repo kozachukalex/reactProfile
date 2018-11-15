@@ -1,85 +1,50 @@
-h1{ 
-    font-size: 72px;
-    color:rgb(62, 243, 243);
-    animation-duration: 3s;
-    animation-name: dropFromTop;
-}
-
 .jumbotron{
+    opacity: 0;
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    width: 50%;
+    padding: 10px;
     margin: 0;
     background: none;
-}
-
-.ctaButtons{
-    width: 500px;
-    margin: 100px auto;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.actionButton{
-    margin-top: 30px;
-}
-.jumboText{
-    position: absolute;
-    bottom: 5%;
-    left: 10%;
-    right: 10%;
+    animation-delay: 9s;
     animation-duration: 5s;
     animation-name: slideAndFade;
+    animation-fill-mode: forwards;
+}
+.jumboText{
+    position: relative;
+    margin: 0 auto;
 }
 .jumboP{
-    font-size: 1.6rem;
+    font-size: 18px;
     color: #fff;
-}
-@keyframes dropFromTop{
-    0%{
-        position: relative;
-        opacity: 0;
-        top: 0px;
-    }
-    100%{
-        position: relative;
-        opacity: 1.0;
-        top: 0;
-    }
 }
 
 @keyframes slideAndFade{
-    0%{ 
-        position: absolute;
-        left: 0;
-        right: 20%;
+    0%{
         opacity: 0;
     }
     30%{
-        position: absolute;
         opacity: 0;
-        left: 0;
-        right: 20%;
     }
     100% {
-        position: absolute;
         opacity: 1.0;
-        left: 10%;
-        right: 10%;
+        background-color: rgb(0,0,0,0.6)
     }
 }
 
 @media screen and (max-width:760px){
-    h1{ 
-        font-size: 36px;
-        color:rgb(62, 243, 243);
+    .jumbotron{
+        position: absolute;
+        bottom: 0%;
+        width: 100%;
+        padding: 20px;
     }
     .jumboP{
         font-size: 24px;
         color: #fff;
         max-width: 960px;
         margin: 0 auto;
-    }
-    .ctaButtons{
-        width: 80%;
-        margin: 50px auto;
     }
 }
