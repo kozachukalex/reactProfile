@@ -1,5 +1,5 @@
 import React from "react";
-import { Fade } from 'reactstrap';
+import { Button, Fade } from 'reactstrap';
 import Jumbotron from "../jumbotron";
 import WordScramble from "../wordScramble"
 import "./home.css";
@@ -20,6 +20,10 @@ export default class Home extends React.Component {
     componentDidMount() {
         this.toggle();
     }
+    
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
 
     render() {
         return (
@@ -27,6 +31,7 @@ export default class Home extends React.Component {
                 <div className="infoArea">
                     <WordScramble />
                     <Jumbotron handlePageChange={this.props.handlePageChange} />
+                    <Button id="reloadButton" href="/"> Replay Animation </Button>
                 </div>
             </Fade>
         )

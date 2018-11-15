@@ -1,6 +1,5 @@
 import React from "react";
 import { Fade } from 'reactstrap'
-import contactCard from "../../images/contactCard.png"
 import "./contact.css"
 
 export default class Contact extends React.Component {
@@ -18,6 +17,10 @@ export default class Contact extends React.Component {
     componentDidMount() {
         this.toggle();
     }
+    
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
     render() {
         return (
             <Fade in={this.state.fadeIn} tag="div">

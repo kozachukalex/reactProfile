@@ -1,7 +1,5 @@
 import React from "react";
-import { Button, Jumbotron } from 'reactstrap';
-import { Link } from "react-router-dom"
-// import styled from 'styled-components'
+import { Jumbotron } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./index.css";
 

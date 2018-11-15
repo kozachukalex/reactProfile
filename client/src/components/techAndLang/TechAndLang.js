@@ -26,18 +26,18 @@ export default () => (
             </div>
             <div className="techIconContainer">
                 <div className="hexes topHex">
-                    <div class="hexagon"><img src={html} alt="htmlIcon" className="techIcon"></img></div>
-                    <div class="hexagon"><img src={css} alt="cssIcon" className="techIcon"></img></div>
-                    <div class="hexagon"><img src={js} alt="jsIcon" className="techIcon"></img></div>
+                    <div className="hexagon"><img src={html} alt="htmlIcon" className="techIcon"></img></div>
+                    <div className="hexagon"><img src={css} alt="cssIcon" className="techIcon"></img></div>
+                    <div className="hexagon"><img src={js} alt="jsIcon" className="techIcon"></img></div>
                 </div>
                 <div className="hexes middleHex">
-                    <div class="hexagon"><img src={sql} alt="sqlIcon" className="techIcon"></img></div>
-                    <div class="hexagon"><img src={mongo} alt="mongoIcon" className="techIcon"></img></div>
+                    <div className="hexagon"><img src={sql} alt="sqlIcon" className="techIcon"></img></div>
+                    <div className="hexagon"><img src={mongo} alt="mongoIcon" className="techIcon"></img></div>
                 </div>
                 <div className="hexes bottomHex">
-                    <div class="hexagon"><img src={node} alt="nodeIcon" className="techIcon"></img></div>
-                    <div class="hexagon"><img src={exprs} alt="exprsIcon" className="techIcon"></img></div>
-                    <div class="hexagon"><img src={reactIcon} alt="reactIcon" className="techIcon"></img></div>
+                    <div className="hexagon"><img src={node} alt="nodeIcon" className="techIcon"></img></div>
+                    <div className="hexagon"><img src={exprs} alt="exprsIcon" className="techIcon"></img></div>
+                    <div className="hexagon"><img src={reactIcon} alt="reactIcon" className="techIcon"></img></div>
                 </div>
             </div>
         </div>

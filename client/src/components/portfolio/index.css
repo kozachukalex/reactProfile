@@ -1,0 +1,35 @@
+.projectContainer{
+    position: relative;
+    border: 2px solid white;
+    background-color: rgba(0,0,0,0.6);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10%;
+    max-width: 60%;
+}
+
+.projectImage{
+    position: relative;
+    width: 358px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+}
+
+.projectFlex{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 760px){
+    .projectContainer{
+        max-width: 100%;
+    }
+    .projectImage{
+        position: relative;
+        width: 200px;
+        border: 1px solid white;
+        margin-bottom: 20px;
+    }
+}

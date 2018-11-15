@@ -28,7 +28,7 @@ class App extends Component {
                 <Route exact path="/portfolio" component={Portfolio} />
                 <Route exact path="/contact" component={Contact} />
             </div>
-            <Footer></Footer>
+            <Footer handlePageChange = {this.handlePageChange} currentPage={this.state.currentPage}></Footer>
         </div>
         </Router>
     );
